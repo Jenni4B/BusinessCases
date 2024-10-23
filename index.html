@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Business Case</title>
+    <title>Login Page</title>
 </head>
 <body>
     <section class="login-section">
@@ -26,10 +26,15 @@
                 <input type="twoStep" id="twoStep" placeholder="2 Step">
             </div>
             
-            <button type="button" id="loginBtn">Login</button> 
-            <button type="button" id="createAccBtn">Create Account</button>
+            <div class ="login-field" id="accountBtns">
+
+                <button onclick="location.href='dashboard.html';" type="button" id="loginBtn">Login</button> 
+                <button type="button" id="createAccBtn">Create Account</button>
+
+            </div>
             
         </form>
     <script src="script.js" defer></script>
+
 </body>
 </html>
