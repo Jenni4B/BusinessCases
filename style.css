@@ -1,8 +1,10 @@
 .login-section {
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  padding: 30px;
+  border: solid black 2px;
+  width: 30%;
+  margin: 10% auto 0;
+}
+
   
   .login-field {
     margin-top: 25px;
@@ -10,4 +12,5 @@
   
   #loginBtn {
     margin-top: 25px;
+    margin-right: 60%;
   }
