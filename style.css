@@ -8,9 +8,10 @@
   margin: 10% auto 0;
 }
 
-#email, #password{
+#password, #username{
   width: 200px;
 }
+
 
 .login-field {
     margin-top: 25px;
@@ -22,9 +23,14 @@
     margin-right: 60%;
 }
 
+#error-message{
+  padding-top: 10px;
+  color: rgb(193, 17, 17);
+}
+
 /* DASHBORD PAGE */
 
-#welcome{
+#welcomeUser{
   margin: 40px;
   width: 400px;
   height: 30px;
