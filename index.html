@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <section class="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="login-field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+        
+            <div class="login-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+        
+            <div class="login-field">
+                <label for="twoStep">2 Step:</label>
+                <input type="text" id="twoStep" placeholder="2 Step" required>
+            </div>
+            
+            <div class="error-message" id="error-message" style="display: none;"></div>
 
+            <div class="login-field" id="accountBtns">
+                <button type="button" id="loginBtn">Login</button> 
+                <button type="button" id="createAccBtn" onclick="createAccount()">Create Account</button>
+            </div>
+        </form>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+</html>
