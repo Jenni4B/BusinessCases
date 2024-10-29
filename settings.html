@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="dashboard.js" defer></script>
+    <title>Settings/Profile</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h3 class=page-title id="Settings">Settings</h3>
+            <ul>
+                <li><button onclick="location.href='dashboard.html';">Dashboard</button></li>
+                <li><button onclick="location.href='settings.html';">Settings/Profile</button></li>
+                <li><button class="logoutBtn">Log Out</button></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <section class="profile-section">
+
+            <h2>User Profile</h2>
+            <form id="profile-form">
+
+                <div class="profile-field">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+
+                <div class="profile-field">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+
+                <div class="profile-field">
+                    <label for="twoStep">2 Step Authentication:</label>
+                    <input type="text" id="twoStep" placeholder="2 Step">
+                </div>
+
+                <button type="button" id="update-profile">Update Profile</button>
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
