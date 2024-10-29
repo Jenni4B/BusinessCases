@@ -30,7 +30,7 @@
 
 /* DASHBORD PAGE */
 
-#welcomeUser{
+.page-title{
   margin: 40px;
   width: 400px;
   height: 30px;
@@ -39,8 +39,7 @@
 .navbar{
   background-color: pink;
   border: solid black 1px;
-  width: 93%;
-  margin: 40px;
+  margin: 40px 40px 0 40px; /* top, right, bottom, left */
   padding: 10px;
 }
 .navbar ul {
@@ -55,3 +54,23 @@
     margin-right: 30px;
     
   }
+
+#contentContainer{
+  border: solid black 1px;
+  margin: 0 40px;
+}
+
+
+/* SETTINGS */
+
+.profile-section {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 40px 40px 0 40px; /* top, right, bottom, left */
+  border: solid rgb(0, 0, 0) 1px;
+}
+
+.profile-field{
+  padding: 0 0 20px 0;
+}
