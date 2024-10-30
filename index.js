@@ -6,12 +6,10 @@ let accountInfo = {
     twoStep: "67890@"
 };
 
-
 // Login validation function
 function logInValidation(inputUsername, inputPassword, inputTwoStep) {
     const errorMessageDiv = document.getElementById('error-message');
 
-    // Check if errorMessageDiv exists to avoid errors
     if (errorMessageDiv) {
         errorMessageDiv.style.display = 'none';
         errorMessageDiv.innerText = '';
@@ -39,43 +37,23 @@ function logInValidation(inputUsername, inputPassword, inputTwoStep) {
     return true;
 }
 
-// Login validation function
+// Initialize event listeners only after the DOM has loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Set up the login validation
     document.getElementById('loginBtn').addEventListener('click', function() {
         const inputUsername = document.getElementById('username').value;
         const inputPassword = document.getElementById('password').value;
         const inputTwoStep = document.getElementById('twoStep').value;
-
         logInValidation(inputUsername, inputPassword, inputTwoStep);
     });
 
-    // Greet the user if logged in
-    // const welcomeUser = document.getElementById('welcomeUser');
-    // if (welcomeUser) {
-    //     welcomeUser.textContent = `Hey ${accountInfo.name}!`;
-    // }
-
-    // Attach logout function to buttons with the class "logoutBtn"
-    document.querySelectorAll(".logoutBtn").forEach(button => {
-        button.addEventListener("click", logOut);
-    });
-
-    // Redirect to the home page if already logged in
+    // Redirect to the dashboard if already logged in
     if (localStorage.getItem("isLoggedIn") === "true") {
         window.location.href = "dashboard.html";
     }
 });
-
 
 // Logout function
 function logOut() {
     localStorage.removeItem("isLoggedIn");
     window.location.href = "index.html";
 }
-
-
-// Placeholder function for account creation
-// function createAccount() {}
-    // Implement account creation logic here
-

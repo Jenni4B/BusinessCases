@@ -36,6 +36,10 @@
   height: 30px;
 }
 
+.info-card{
+  margin: 20px;
+}
+
 .navbar{
   background-color: pink;
   border: solid black 1px;
@@ -55,11 +59,29 @@
     
   }
 
-#contentContainer{
-  border: solid black 1px;
-  margin: 0 40px;
+#configSettings{
+  border: solid purple 2px;
+  margin: 0px 40px; /* top, right, bottom, left */
+  padding: 10px;
 }
 
+#contentContainer{
+  border: solid black 1px;
+  margin: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sensor-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 30px 10px;
+  width: 200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
 
 /* SETTINGS */
 
